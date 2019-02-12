@@ -63,7 +63,7 @@ def getbutton():
 			if not keys & 0b00100:
 				button = 3
 				break
-			if not keys & 0b00100:
+			if not keys & 0b01000:
 				button = 4
 				break
 			if not keys & 0b10000:
