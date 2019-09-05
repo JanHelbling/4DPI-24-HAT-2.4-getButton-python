@@ -20,7 +20,6 @@
 #
 
 import array, fcntl
-from time import sleep
 
 _IOC_NRBITS   =  8
 _IOC_TYPEBITS =  8
