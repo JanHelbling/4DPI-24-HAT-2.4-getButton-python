@@ -49,7 +49,7 @@ buf = array.array('h',[0])
 
 def getbutton():
 	button = 0
-	with open('/dev/fb1', 'rw') as fd:
+	with open('/dev/fb1', 'r') as fd:
 		while True:
 			fcntl.ioctl(fd, LCD4DPI_GET_KEYS, buf, 1)
 			keys = buf[0]
